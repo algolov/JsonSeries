@@ -9,12 +9,12 @@ import com.github.algolov.{Counters, Link, Listing}
 trait PlayJson extends JsonLibrary {
   import PlayJson._
 
-  override type JSON = JsValue
+  type JSON = JsValue
 
   override def parseFromString(jsonStr: String) = Json.parse(jsonStr)
-  override def parseToString(json: JsValue)        = Json.stringify(json)
+  override def parseToString(json: JsValue)     = Json.stringify(json)
   override def serialize(listing: Listing)      = Json.toJson[Listing](listing)
-  override def deserialize(json: JsValue)          = Json.fromJson[Listing](json).asOpt
+  override def deserialize(json: JsValue)       = Json.fromJson[Listing](json).asOpt
 }
 
 object PlayJson {
