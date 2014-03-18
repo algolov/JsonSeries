@@ -11,12 +11,12 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "org.scalatest"     %% "scalatest"      % "2.0" % "test",
-  "com.typesafe.play" %% "play-json"      % "2.2.1" withSources(),
-  "io.argonaut"       %% "argonaut"       % "6.0.2" withSources() withJavadoc(),
-  "io.spray"          %%  "spray-json"    % "1.2.5" withSources() withJavadoc(),
-  "net.liftweb"       %% "lift-json"      % "2.5.1" withSources() withJavadoc(),
-  "org.json4s"        %% "json4s-native"  % "3.2.7" withSources() withJavadoc(),
-  "org.json4s"        %% "json4s-jackson" % "3.2.7" withSources() withJavadoc()
+  "com.typesafe.play" %% "play-json"      % "2.2.1",
+  "io.argonaut"       %% "argonaut"       % "6.0.3",
+  "io.spray"          %%  "spray-json"    % "1.2.5",
+  "net.liftweb"       %% "lift-json"      % "2.5.1",
+  "org.json4s"        %% "json4s-native"  % "3.2.7",
+  "org.json4s"        %% "json4s-jackson" % "3.2.7"
 )
 
 testOptions in Test += Tests.Argument("-oD")
